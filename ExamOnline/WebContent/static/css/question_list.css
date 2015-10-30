@@ -1,0 +1,297 @@
+.shade{
+    width: 100%;
+    height: 100%;
+    position: fixed;;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    opacity: 0.4;
+    background: #000;
+    display: none;
+}
+.pop_box{
+    width: 400px;
+    height: 200px;
+    z-index: 100000;
+    position: absolute;
+    background: #FFF;
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    margin-top: -125px;
+    margin-left: -200px;
+    text-align: center;
+    display: none;
+}
+.pop_box_yes{
+    cursor:pointer;
+    position: relative;
+    width: 80px;
+    height: 30px;
+    float: left;
+    margin-top: -20px;
+    margin-left: 105px;
+    margin-right:30px;
+    z-index: 100100;
+    background-color: #FE8001;
+    color: #FFF;
+    border: none;
+}
+.pop_box_no{
+    cursor:pointer;
+    position: relative;
+    width: 80px;
+    height: 30px;
+    margin-top: -20px;
+    background-color: #FE8001;
+    color: #FFF;
+    z-index: 100100;
+    float: left;
+    border: none;
+}
+.pop_box_label{
+    position: relative;
+    width: 400px;
+    display: inline-block;
+    height: 140px;
+    line-height: 140px;
+}
+
+.main_box_search{
+    width: 170px;
+    height: 30px;
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1px solid #296793;
+}
+.search_input_img{
+    cursor:pointer;
+    background-image: url(../../static/images/web/ICN_Search_15x20.png);
+    height: 20px;
+    width: 15px;
+    background-repeat: no-repeat;
+    position: relative;
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.search_input{
+    width: 130px;
+    height: 27px;
+    position: relative;
+    float: left;
+    border: blanchedalmond;
+    outline: none;
+    text-indent: 7px;
+}
+.main_box_left{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 450px;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-right: 1px solid #9D9D9D;
+
+}
+.main_box_left_list{
+    width: 180px;
+    height: 30px;
+    background-color: #2E4358;
+    border-radius: 3px;
+    line-height: 30px;
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+    font-family: Arial;
+}
+.main_box_right,li�{
+    font-size:15px;
+    line-height: 50px;
+    color: #2E4358;
+}
+.main_box_left_create{
+    width: 180px;
+    height: 30px;
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    font-family: Arial;
+    border-radius: 3px;
+    font-size: 15px;
+    border-bottom: 1px solid #214358;
+}
+
+.main_box_right{
+    position: relative;
+    float: left;
+    width: 980px;
+    height: 430px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 4px;
+    border: 1px solid #9D9D9D;
+}
+.question_header{
+    height: 50px;
+    border-bottom: 1px solid #9D9D9D;
+    over-flow:hidden;
+    float:left;
+    text-align:center;
+    margin:0 auto;
+    align-content:center;
+    width: 980px;
+}
+.question_ul{
+align-content:center;
+}
+.question_order{
+    height:30px;
+    float:left;
+    width:40px;
+    margin-left:70px;
+}
+.question_id{
+    height:30px;
+    margin-left:40px;
+    float:left;
+    width:50px;
+
+}
+.id_incrense{
+    position: absolute;
+    margin-top: 17px;
+    background-image: url(../../static/images/web/ICN_Increase_10x15.png);
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    margin-left: 5px;
+
+}
+.delete_img{
+    display: none;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.question_description{
+    height:30px;
+    float:left;
+    width:360px;
+    margin-left:90px;
+}
+.question_edit{
+    height:30px;
+    float:left;
+    width:50px;
+    margin-left:90px;
+
+}
+.question_delete{
+    height:30px;
+    margin-left:40px;
+    float:left;
+    width:50px;
+    margin-right:60px;
+
+}
+.question_content{
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    align-content: center;
+    width: 980px;
+    height: 28px;
+    border-top: 0px;
+    border-bottom:1px solid #9D9D9D;
+    line-height: 30px;
+    overflow: hidden;
+}
+.suer_button{
+    cursor:pointer;
+    background-color: #FE8001;
+    width: 80px;
+    height: 30px;
+    position: relative;
+    float: right;
+    margin-top: 420px;
+    color: #FFF;
+    font-size: 16px;
+    border: none;
+    margin-right: 60px;
+}
+#footer{
+    height: 70px;
+    width: 100%;
+    float: left;
+}
+.main_box_right_page{
+    width: 380px;
+    height: 30px;
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 250px;
+}
+
+#flas_message{
+    width: 120px;
+    position: relative;
+    height: 30px;
+    float: left;
+    background-color: lightgray;
+
+}
+.selectAll {
+    width: 15px;
+    height: 15px;
+}
+.selectSpan{
+    background-image: url(../../static/images/login/ICN_Unselected_15x15.png) ;
+    width: 15px;
+    height: 15px;
+    border: none;
+    margin-top: 15px;
+    margin-left: 17px;
+}
+.selectSpanNe {
+    background-image: url(../../static/images/login/ICN_Unselected_15x15.png) ;
+    width: 15px;
+    height: 15px;
+    border: none;
+    margin-top: 6px;
+    margin-left: 17px;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  background: url(../../static/images/login/ICN_Unselected_15x15.png);
+  height: 15px;
+  vertical-align: sub;
+  width: 15px;
+}
+input[type="checkbox"]:checked {
+  background: url(../../static/images/login/ICN_Selected_15x15.png) ;
+}
+.question_description{
+    color:#296793;
+    font-size: 12px;
+}
+.question_ul li{
+    font-size: 14px;
+    color:#0A0A0A;
+}
+.question_order {
+    font-size: 12px;
+    color:#0A0A0A;
+}
+.question_id{
+    font-size: 12px;
+    color:#0A0A0A;
+}
+

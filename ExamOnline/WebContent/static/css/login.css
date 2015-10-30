@@ -1,0 +1,181 @@
+body {
+    display: block;
+    margin: 8px;
+
+}
+.wapper {
+    width: 1240px;
+    min-height: 500px;
+    margin: auto;
+    align-content: center;
+}
+.login_form_left{
+    width:600px;
+    min-height: 400px;
+    float:left;
+    position: relative;
+}
+.login_form_right{
+    width: 500px;
+    height: 400px;
+    position: relative;
+    float: left;
+    margin: auto;
+    margin-left: 100px;
+}
+.login_form_left_log{
+    width:180px;
+    height:90px;
+    position: relative;
+    float:top;
+    margin-top:300px;
+    margin-left:170px;
+}
+.login_form_left_text{
+    font-size: 33px;
+    margin-left:170px;
+    margin-top:20px;
+    font-family: Arial;
+
+}
+.login_input{
+    float: left;
+    width: 300px;
+    position: relative;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #2E4358;
+    padding: 50px;
+    border-radius: 4px;
+}
+.login_welcome{
+    position: relative;
+    width: 300px;
+    float: left;
+    margin-top:110px;
+    font-size:25px;
+    font-family: Arial;
+
+}
+.login_log{
+    height: 40px;
+    margin: auto;
+    margin-top: 50px;
+}
+.top_info{
+    height: 20px;
+    margin-top: -20px;
+    color: aliceblue;
+}
+.login_entry{
+    width: 300px;
+    height: 150px;
+    position: relative;
+    margin-top: 5px;
+}
+.under_info{
+    width: 300px;
+    height: 30px;
+    float: left;
+    margin-top: 0px;
+    margin-top: 10px;
+
+}
+.cookie{
+    width: 140px;
+    height: 30px;
+    float: left;
+}
+.forgot_password{
+    width: 150px;
+    height: 30px;
+    position: relative;
+    float: right;
+}
+.login_entry_input_wrong{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    float: right;
+    margin-right: -30px;
+    margin-top: 7px;
+    background-image: url("../../static/images/static_image/ICN_Client_Login_Wrong_20X20.png");
+
+}
+.login_entry_input_wrong_second{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    float: right;
+    background-image: url("../../static/images/static_image/ICN_Client_Login_Wrong_20X20.png");
+    margin-right: -30px;
+    margin-top: 57px;
+}
+.login_entry_input_avatar{
+    float: left;
+    margin-left: 20;
+    width:40px;
+}
+.login_entry_input{
+    height: 35px;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+.avatar{
+    margin-top:7px;
+}
+.input{
+    width:235px;
+    border: 0px;
+    background-color: white;
+    border-radius: 3px;
+    outline: none;
+    overflow: auto;
+    height: 32px;
+}
+.input_submit{
+    height:35px;
+    border: 0px;
+    width:300px;
+    background-color:#FE9901;
+    border-radius: 3px;
+    color: white;
+    font-size: 25;
+    cursor: pointer;
+}
+#under_info_box{
+    cursor:pointer;
+    background-image:url("../../static/images/login/BTN_RemeberMe_Unselect_12X12.png");
+    width: 12px;
+    height: 12px;
+    border: none;
+    color: white;
+    outline: none;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+    margin-right: 20px;
+}
+.label{
+    color:white;
+    float: right;
+}
+.Remember_label{
+    color:white;
+    float: left;
+}
+
+.login_footer{
+    border-top: 1 solid;
+    margin: 0 auto;
+    height: 30px;
+    width: 1240px;
+    text-align: center;
+    font-family: monospace;
+    position: relative;
+    float: left;
+    margin-top:80px;
+    padding: 20px;
+}

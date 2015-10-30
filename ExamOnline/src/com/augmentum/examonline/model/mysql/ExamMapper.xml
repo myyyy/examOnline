@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.augmentum.examonline.model.Exam">
+
+    <resultMap type="Exam" id="ExamMap">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="description" property="description"/>
+        <result column="effective_time" property="effectiveTime"/>
+        <result column="duration" property="duration"/>
+        <result column="question_quantity" property="questionQuantity"/>
+        <result column="total_score" property="totalScore"/>
+        <result column="pass_criteria" property="passCriteria"/>
+        <result column="question_points" property="questionPoints"/>
+        <result column="created_time" property="createdTime"/>
+        <result column="creator" property="creator"/>
+    </resultMap>
+
+    <select id="getById" parameterType="int" resultMap="ExamMap">
+        <![CDATA[
+            SELECT * FROM exam WHERE id = #{id}
+        ]]>
+    </select>
+
+    <insert id="update" parameterType="Exam" useGeneratedKeys="true" keyProperty="id">
+        <![CDATA[
+        INSERT INTO exam(name, effective_time, duration, question_quantity, total_score, pass_criteria, 
+                         question_points, created_time, creator,description) 
+        VALUES(#{name}, #{effectiveTime}, #{duration}, #{questionQuantity}, #{totalScore},
+               #{passCriteria}, #{questionPoints}, NOW(), #{creator},#{description})
+        ]]>
+    </insert>
+
+    <select id="getPageCount" resultType="int" parameterType="map">
+        <![CDATA[
+            SELECT COUNT(*) FROM exam where name LIKE "%"#{key}"%" AND deleted = 0
+        ]]>
+    </select>
+
+    <select id="findList" resultMap="ExamMap" parameterType="map">
+        <![CDATA[
+            SELECT * FROM exam WHERE name LIKE "%"#{key}"%" AND deleted = 0
+        ]]>
+        ORDER BY created_time DESC LIMIT #{offset} , #{pageSize}
+    </select>
+    
+   <delete id="delete" parameterType="int" >
+        <![CDATA[
+            UPDATE exam SET deleted = #{deleted}, created_time = NOW() WHERE id = #{id}
+        ]]>
+    </delete>
+    
+    <update id="updateDeleted" parameterType="map">
+        <![CDATA[
+            UPDATE exam SET deleted = #{deleted}, created_time = NOW() WHERE id = #{id}
+        ]]>
+    </update>
+</mapper>
+
