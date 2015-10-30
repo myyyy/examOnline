@@ -1,3 +1,0 @@
-# examOnline
-Use java. 
-Test
